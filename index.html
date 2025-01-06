@@ -1,1 +1,152 @@
-# Nikev-2k25
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHON NIKEV - WEB DEVELOPER</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header {
+            background: url('your-top-left-image-url.jpg') no-repeat top left/80px 80px, #2a2a2a;
+            padding: 20px 20px 60px 100px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content section {
+            margin-bottom: 20px;
+        }
+
+        .content h3 {
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .content img{
+            width: 65%;
+            height: 700px;
+        }
+        .content img:hover{
+            background-color: #2a2a2a;
+        }
+
+        .icon-list {
+            display: flex;
+            gap: 10px;
+        }
+
+        .icon-list img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease, rotate 0.3s ease;
+        }
+
+        .icon-list img:hover {
+            transform: scale(1.2) rotate(360deg);
+        }
+
+        .responsive-img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding-left: 20px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header h2 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PHON NIKEV</h1>
+            <h2>WEB DEVELOPER</h2>
+        </header>
+        <div class="content">
+            <img src="/imgs/nikev.jpg" alt="Sculpture Artist" class="responsive-img">
+            <section>
+                <h3>About Me</h3>
+                <p>I'm Phon Nikev i am 19 year old i'm study at PSE in Skills web development</p>
+            </section>
+            <section>
+                <h3>Contact</h3>
+                <p>Phone: 096 7583 906</p>
+                <p>Email: nikev399@gmail.com</p>
+                <p>TikTok: kevkev271</p>
+                <p>Address: Trea4,Stuerng mean chey,Mean chey,Phnom Penh</p>
+            </section>
+            <section>
+                <h3>Skills</h3>
+                <div class="icon-list">
+                    <img src="imgs/Figma.png" alt="Design Concept">
+                    <img src="imgs/JavaScript-logo.png" alt="Art Installation">
+                    <img src="imgs/HTML.webp" alt="Sculpture Creation">
+                    <img src="imgs/CSS.jpeg" alt="Design Concept">
+                    <img src="imgs/Bootstrap.png" alt="Design Concept">
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
